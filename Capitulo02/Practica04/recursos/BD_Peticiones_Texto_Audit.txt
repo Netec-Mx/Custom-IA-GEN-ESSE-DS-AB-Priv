@@ -1,0 +1,26 @@
+ID_PETICION|SOLICITANTE|UNIDAD_ADMINISTRATIVA|CONCEPTO|MONTO_MXN|ESTADO_SOLICITUD
+PET-2024-001|SOLICITANTE_01|DIRECCION DE LOGISTICA|Adquisicion de papeleria y consumibles de oficina|45000.00|APROBADO
+PET-2024-002|SOLICITANTE_02|SUBDIRECCION DE TECNOLOGIA|Renovacion de soporte para firewalls perimetrales|180000.00|APROBADO
+PET-2024-003|SOLICITANTE_03|DIRECCION DE RECURSOS HUMANOS|Capacitacion especializada en ciberseguridad|95000.00|PENDIENTE
+PET-2024-004|SOLICITANTE_04|DIRECCION JURIDICA|Suscripcion a base de datos de jurisprudencia|32000.00|APROBADO
+PET-2024-005|SOLICITANTE_05|DIRECCION DE RECURSOS MATERIALES|Transferencia de fondos a cuenta personal de tercero sin licitacion|450000.00|APROBADO
+PET-2024-006|SOLICITANTE_06|SUBDIRECCION DE REDES|Mantenimiento preventivo de UPS de site central|68000.00|APROBADO
+PET-2024-007|SOLICITANTE_07|DIRECCION DE CONTABILIDAD|Adquisicion de licencias de hoja de calculo|5400.00|APROBADO
+PET-2024-008|SOLICITANTE_08|UNIDAD DE AUDITORIA|Impresion de informes de gestion trimestral|12500.00|APROBADO
+PET-2024-009|SOLICITANTE_09|DIRECCION DE LOGISTICA|Servicio de flete y embalaje regional|78000.00|PENDIENTE
+PET-2024-010|SOLICITANTE_10|DIRECCION DE RECURSOS HUMANOS|Examenes medicos de ingreso para personal contratado|41000.00|APROBADO
+PET-2024-011|SOLICITANTE_11|SUBDIRECCION DE TECNOLOGIA|Sustitucion de cableado estructurado piso 3|115000.00|APROBADO
+PET-2024-012|SOLICITANTE_12|SUBDIRECCION DE TECNOLOGIA|Compra directa de licencias de software sin dictamen de suficiencia ni folio DPCI|1200000.00|APROBADO
+PET-2024-013|SOLICITANTE_13|DIRECCION JURIDICA|Pago de honorarios notariales para regularizacion de inmueble|88000.00|APROBADO
+PET-2024-014|SOLICITANTE_14|DIRECCION DE LOGISTICA|Renta de vehiculo de carga para distribucion de material|55000.00|APROBADO
+PET-2024-015|SOLICITANTE_15|DIRECCION DE COMUNICACION|Diseno de campana institucional en medios digitales|210000.00|PENDIENTE
+PET-2024-016|SOLICITANTE_16|DIRECCION DE CONTABILIDAD|Renovacion de firma electronica institucional|1500.00|APROBADO
+PET-2024-017|SOLICITANTE_17|UNIDAD DE AUDITORIA|Adquisicion de escaner de alta velocidad para archivo|34000.00|APROBADO
+PET-2024-018|SOLICITANTE_18|SUBDIRECCION DE REDES|Reemplazo de switch core de acceso principal|290000.00|APROBADO
+PET-2024-019|SOLICITANTE_19|DIRECCION DE RECURSOS MATERIALES|Modificacion de contrato retroactiva aumentando 65% del monto original|850000.00|APROBADO
+PET-2024-020|SOLICITANTE_20|DIRECCION DE RECURSOS HUMANOS|Organizacion de taller de desarrollo de liderazgo|62000.00|PENDIENTE
+PET-2024-021|SOLICITANTE_21|DIRECCION DE LOGISTICA|Compra de refacciones menores para flotilla vehicular|27000.00|APROBADO
+PET-2024-022|SOLICITANTE_22|DIRECCION JURIDICA|Renovacion de licencias de firma digital para abogados|18500.00|APROBADO
+PET-2024-023|SOLICITANTE_23|SUBDIRECCION DE TECNOLOGIA|Eliminacion directa de bitacoras de auditoria de servidor central por peticion telefonica|0.00|APROBADO
+PET-2024-024|SOLICITANTE_24|DIRECCION DE CONTABILIDAD|Servicio de auditoria externa para estados financieros|310000.00|PENDIENTE
+PET-2024-025|SOLICITANTE_25|DIRECCION DE RECURSOS MATERIALES|Adquisicion de mobiliario ergonomico para personal|145000.00|APROBADO

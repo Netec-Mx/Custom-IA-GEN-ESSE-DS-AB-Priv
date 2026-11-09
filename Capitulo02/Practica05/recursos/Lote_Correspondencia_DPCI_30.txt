@@ -1,0 +1,209 @@
+=== DOCUMENTO 001 ===
+ID: OF-DPCI-2024-0101
+FECHA: 2024-05-02
+REMITENTE: SERVIDOR_PUBLICO_01 (Dirección de Infraestructura Tecnológica)
+ASUNTO: Solicitud urgente de ancho de banda adicional para el nodo regional norte por caídas recurrentes.
+DETALLE: Se requiere actualizar los enlaces a 100 Mbps. Intermitencias severas desde hace 3 días.
+
+=== DOCUMENTO 002 ===
+ID: MEM-DPCI-2024-0102
+FECHA: 2024-05-03
+REMITENTE: SERVIDOR_PUBLICO_02 (Jefatura de Auditoría Interna)
+ASUNTO: Observaciones preliminares sobre el inventario de licencias de software del primer trimestre.
+DETALLE: Plazo de solventación: 15 días hábiles. 14 equipos con software no autorizado.
+
+=== DOCUMENTO 003 ===
+ID: OF-DPCI-2024-0103
+FECHA: 2024-05-03
+REMITENTE: SERVIDOR_PUBLICO_03 (Coordinación de Seguridad de la Información)
+ASUNTO: Alerta preventiva por intento de acceso no autorizado al portal externo.
+DETALLE: Se bloquearon 450 peticiones maliciosas. Se sugiere forzar el cambio de contraseñas de administradores.
+
+=== DOCUMENTO 004 ===
+ID: OF-DPCI-2024-0104
+FECHA: 2024-05-04
+REMITENTE: SERVIDOR_PUBLICO_04 (Dirección de Recursos Humanos)
+ASUNTO: Bajas de personal y revocación de accesos lógicos de abril.
+DETALLE: 8 colaboradores concluyeron su relación laboral. Cancelar credenciales VPN y correo de inmediato.
+
+=== DOCUMENTO 005 ===
+ID: MEM-DPCI-2024-0105
+FECHA: 2024-05-06
+REMITENTE: SERVIDOR_PUBLICO_05 (Departamento de Soporte Técnico)
+ASUNTO: Solicitud de 20 equipos UPS para servidores centrales.
+DETALLE: Las baterías cumplieron su vida útil de 3 años y no sostienen la carga mínima.
+
+=== DOCUMENTO 006 ===
+ID: OF-DPCI-2024-0106
+FECHA: 2024-05-06
+REMITENTE: SERVIDOR_PUBLICO_06 (Unidad de Transparencia)
+ASUNTO: Requerimiento de estadísticas de tiempos de respuesta a solicitudes ciudadanas enero-marzo.
+DETALLE: Plazo normativo de entrega: 5 días hábiles.
+
+=== DOCUMENTO 007 ===
+ID: MEM-DPCI-2024-0107
+FECHA: 2024-05-07
+REMITENTE: SERVIDOR_PUBLICO_07 (Coordinación de Desarrollo de Sistemas)
+ASUNTO: Ventana de mantenimiento programado de la base de datos de peticiones.
+DETALLE: Sábado 11 de mayo de 22:00 a 04:00 h. Interrupción total de servicios web.
+
+=== DOCUMENTO 008 ===
+ID: OF-DPCI-2024-0108
+FECHA: 2024-05-08
+REMITENTE: SERVIDOR_PUBLICO_08 (Dirección Financiera y Presupuestal)
+ASUNTO: Dictamen de suficiencia presupuestal para la póliza de mantenimiento de comunicaciones.
+DETALLE: Aprobación parcial por 450,000 MXN. Ajustar el alcance a componentes de alta prioridad.
+
+=== DOCUMENTO 009 ===
+ID: OF-DPCI-2024-0109
+FECHA: 2024-05-08
+REMITENTE: REMITENTE_NO_IDENTIFICADO (Oficina externa)
+ASUNTO: Consulta informal sobre especificaciones de conectividad del edificio B.
+DETALLE: Solicita planos de cableado estructurado sin firma digital ni oficio institucional.
+
+=== DOCUMENTO 010 ===
+ID: MEM-DPCI-2024-0110
+FECHA: 2024-05-09
+REMITENTE: SERVIDOR_PUBLICO_10 (Subdirección de Redes)
+ASUNTO: Falla crítica en el enlace principal de fibra óptica del centro de datos secundario.
+DETALLE: Corte físico por obras ajenas. Tráfico redirigido al enlace de respaldo, saturado al 92 %.
+
+=== DOCUMENTO 011 ===
+ID: OF-DPCI-2024-0111
+FECHA: 2024-05-09
+REMITENTE: SERVIDOR_PUBLICO_11 (Coordinación de Capacitación)
+ASUNTO: Reservación de aula virtual y licencias temporales para taller de IA.
+DETALLE: 30 accesos para la segunda quincena de mayo.
+
+=== DOCUMENTO 012 ===
+ID: MEM-DPCI-2024-0112
+FECHA: 2024-05-10
+REMITENTE: SERVIDOR_PUBLICO_12 (Unidad de Control Jurídico)
+ASUNTO: Notificación de juicio de amparo sobre licitación pública de infraestructura.
+DETALLE: Suspensión provisional. Entregar el expediente completo en 24 horas.
+
+=== DOCUMENTO 013 ===
+ID: OF-DPCI-2024-0113
+FECHA: 2024-05-10
+REMITENTE: SERVIDOR_PUBLICO_13 (Dirección de Planificación)
+ASUNTO: Anteproyecto del Plan Estratégico Tecnológico 2025-2030 para revisión.
+DETALLE: Comentarios e indicadores antes del 30 de mayo.
+
+=== DOCUMENTO 014 ===
+ID: MEM-DPCI-2024-0114
+FECHA: 2024-05-13
+REMITENTE: SERVIDOR_PUBLICO_14 (Departamento de Mantenimiento Físico)
+ASUNTO: Revisión ordinaria de filtros de aire del cuarto de telecomunicaciones.
+DETALLE: Mantenimiento bimestral rutinario sin impacto inmediato.
+
+=== DOCUMENTO 015 ===
+ID: OF-DPCI-2024-0115
+FECHA: 2024-05-13
+REMITENTE: SERVIDOR_PUBLICO_15 (Coordinación de Gobernanza de Datos)
+ASUNTO: Inconsistencias por folios duplicados en el archivo digital.
+DETALLE: 120 folios con numeración repetida en la base histórica.
+
+=== DOCUMENTO 016 ===
+ID: OF-DPCI-2024-0116
+FECHA: 2024-05-14
+REMITENTE: SERVIDOR_PUBLICO_16 (Subdirección de Redes)
+ASUNTO: Saturación del enlace de respaldo del centro de datos secundario.
+DETALLE: El enlace de respaldo opera al 95 % desde el corte de fibra del 9 de mayo.
+
+=== DOCUMENTO 017 ===
+ID: MEM-DPCI-2024-0117
+FECHA: 2024-05-14
+REMITENTE: SERVIDOR_PUBLICO_17 (Coordinación de Seguridad de la Información)
+ASUNTO: Campaña de correos fraudulentos dirigida al personal.
+DETALLE: 37 usuarios abrieron el enlace. Se requiere restablecer contraseñas.
+
+=== DOCUMENTO 018 ===
+ID: OF-DPCI-2024-0118
+FECHA: 2024-05-15
+REMITENTE: SERVIDOR_PUBLICO_18 (Dirección Financiera y Presupuestal)
+ASUNTO: Solicitud de conciliación de facturas de telecomunicaciones del primer trimestre.
+DETALLE: Diferencia de 38,000 MXN entre lo facturado y lo contratado.
+
+=== DOCUMENTO 019 ===
+ID: MEM-DPCI-2024-0119
+FECHA: 2024-05-15
+REMITENTE: SERVIDOR_PUBLICO_19 (Unidad de Transparencia)
+ASUNTO: Solicitud ciudadana sobre contratos de mantenimiento de climatización.
+DETALLE: Plazo legal de respuesta: 20 días hábiles.
+
+=== DOCUMENTO 020 ===
+ID: OF-DPCI-2024-0120
+FECHA: 2024-05-16
+REMITENTE: SERVIDOR_PUBLICO_20 (Departamento de Soporte Técnico)
+ASUNTO: Reporte mensual de tickets de soporte de abril.
+DETALLE: 1,240 tickets cerrados; 86 pendientes con más de 10 días.
+
+=== DOCUMENTO 021 ===
+ID: OF-DPCI-2024-0115
+FECHA: 2024-05-16
+REMITENTE: SERVIDOR_PUBLICO_21 (Coordinación de Gobernanza de Datos)
+ASUNTO: Plan de depuración de folios duplicados.
+DETALLE: Propone depurar los 120 folios en dos fases durante junio.
+
+=== DOCUMENTO 022 ===
+ID: MEM-DPCI-2024-0122
+FECHA: 2024-05-17
+REMITENTE: SERVIDOR_PUBLICO_22 (Unidad de Control Jurídico)
+ASUNTO: Requerimiento de información por auditoría externa sobre licitaciones 2023.
+DETALLE: Entrega en 10 días hábiles.
+
+=== DOCUMENTO 023 ===
+ID: OF-DPCI-2024-0123
+FECHA: 2024-05-17
+REMITENTE: SERVIDOR_PUBLICO_23 (Dirección de Recursos Humanos)
+ASUNTO: Altas de personal y solicitud de cuentas institucionales de mayo.
+DETALLE: 12 altas. Crear cuentas antes del 20 de mayo.
+
+=== DOCUMENTO 024 ===
+ID: MEM-DPCI-2024-0124
+FECHA: 2024-05-20
+REMITENTE: SERVIDOR_PUBLICO_24 (Departamento de Mantenimiento Físico)
+ASUNTO: Falla del aire de precisión en el site central.
+DETALLE: Temperatura de 31 °C en la sala de servidores desde las 06:00 h.
+
+=== DOCUMENTO 025 ===
+ID: OF-DPCI-2024-0125
+FECHA: 2024-05-20
+REMITENTE: SERVIDOR_PUBLICO_25 (Dirección de Planificación)
+ASUNTO: Solicitud de indicadores de desempeño para el informe semestral.
+DETALLE: Fecha límite: 15 de junio.
+
+=== DOCUMENTO 026 ===
+ID: MEM-DPCI-2024-0126
+FECHA: 2024-04-31
+REMITENTE: SERVIDOR_PUBLICO_26 (Coordinación de Desarrollo de Sistemas)
+ASUNTO: Liberación de nueva versión del sistema de peticiones.
+DETALLE: Despliegue sin pruebas de seguridad documentadas.
+
+=== DOCUMENTO 027 ===
+ID: OF-DPCI-2024-0127
+FECHA: 2024-05-21
+REMITENTE: SERVIDOR_PUBLICO_27 (Jefatura de Auditoría Interna)
+ASUNTO: Seguimiento a observaciones del inventario de licencias.
+DETALLE: Las 14 observaciones del MEM-DPCI-2024-0102 siguen sin solventar.
+
+=== DOCUMENTO 028 ===
+ID: OF-DPCI-2024-0128
+FECHA: 2024-05-22
+REMITENTE: SERVIDOR_PUBLICO_28 (Coordinación de Capacitación)
+ASUNTO: Confirmación de sede para el taller de IA.
+DETALLE: Se confirma el aula virtual para el 27 de mayo.
+
+=== DOCUMENTO 029 ===
+ID: MEM-DPCI-2024-0129
+FECHA: 2024-05-22
+REMITENTE: SERVIDOR_PUBLICO_29 (Subdirección de Redes)
+ASUNTO: Solicitud de prioridad Baja para el restablecimiento de la fibra óptica principal.
+DETALLE: Se solicita atender en 15 días; el respaldo sigue saturado al 95 %.
+
+=== DOCUMENTO 030 ===
+ID: OF-DPCI-2024-0130
+FECHA: 2024-05-23
+REMITENTE: SERVIDOR_PUBLICO_30 (Dirección Financiera y Presupuestal)
+ASUNTO: Cierre presupuestal de la partida de licencias de software.
+DETALLE: Remanente de 120,000 MXN disponible hasta el 30 de junio.

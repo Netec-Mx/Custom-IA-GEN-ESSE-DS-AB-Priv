@@ -1,192 +1,95 @@
 # Práctica 9. Carga de una base de datos masiva de la DPCI para usar Advanced Data Analysis e identificar tendencias y anomalías, y uso de la interfaz Canvas para redactar, de forma iterativa y colaborativa, el documento oficial de conclusiones técnicas
 
-**Capítulo 3. Herramientas de Inteligencia Artificial para el Análisis y la Generación de Documentos · Módulo 9. El Ecosistema de OpenAI ChatGPT**
+**Duración de la práctica:** 30 min
 
-## Metadatos
+## Descripción
+Los participantes utilizarán exclusivamente la versión gratuita de **OpenAI ChatGPT** aprovechando sus dos entornos especializados: **Advanced Data Analysis** (entorno de ejecución de código Python para procesar datos y generar gráficas) y la interfaz **Canvas** (editor colaborativo en pantalla dividida). A partir de una base de datos masiva de la DPCI autogenerada directamente en formato CSV/Excel descargable, los asistentes realizarán un análisis estadístico para identificar tendencias y anomalías, y luego activarán **Canvas** para redactar, editar por secciones y pulir de forma iterativa el documento oficial de conclusiones técnicas.
 
-| Parámetro | Detalle |
-| :--- | :--- |
-| **Duración** | 36 minutos |
-| **Complejidad** | Intermedia |
-| **Nivel de Bloom** | Analizar |
-| **Herramienta obligatoria** | ChatGPT (versión gratuita) con análisis de datos (Advanced Data Analysis) y Canvas |
-| **Archivos** | `DPCI_Solicitudes_2024.csv` (5,203 filas) y `DPCI_Solicitudes_2024_reducido.csv` (1,000 filas) |
-
-## Descripción General
-
-El participante cargará en **ChatGPT** una base de datos ficticia de 5,203 solicitudes de 2024 de la DPCI. Usará el análisis de datos (Advanced Data Analysis) para explorar la información, limpiar duplicados y valores vacíos, generar estadísticas y gráficas e identificar tendencias y anomalías. Con los hallazgos, abrirá **Canvas** para redactar y refinar de forma iterativa el documento oficial de conclusiones técnicas.
-
-Esta práctica debe realizarse con ChatGPT, porque forma parte de los objetivos del módulo. Se usa la versión gratuita considerando sus límites; si se alcanzan, el instructor puede usar la base reducida de 1,000 filas.
-
-## Objetivos de Aprendizaje
-
-Al finalizar la práctica, el participante será capaz de:
-
-- Cargar una base de datos masiva en ChatGPT y validar su estructura.
-- Limpiar datos (duplicados y vacíos) y obtener estadísticas descriptivas y gráficas sin programar.
-- Identificar tendencias y anomalías y verificar los hallazgos.
-- Redactar y refinar un documento técnico de forma iterativa en Canvas.
-
-## Prerrequisitos
-
-- Haber revisado el ecosistema de OpenAI ChatGPT, Canvas y Advanced Data Analysis en el Módulo 9.
-- Cuenta gratuita de ChatGPT con sesión iniciada (ver [Setup_Guide.md](../../Setup_Guide.md)).
-
-## Entorno de Laboratorio
-
-| Herramienta | Uso | Acceso |
-| :--- | :--- | :--- |
-| ChatGPT (gratuito) | Análisis de datos y Canvas | [chatgpt.com](https://chatgpt.com/) |
-| Microsoft Excel | Abrir la base para verificar | Instalado o [microsoft365.com](https://www.microsoft365.com/) |
-| Microsoft Word | Documento final | Instalado o en la web |
-
-**Archivos de la práctica**
-
-| Archivo | Descripción |
-| :--- | :--- |
-| [DPCI_Solicitudes_2024.csv](recursos/DPCI_Solicitudes_2024.csv) | 5,203 solicitudes con nodo, tipo, tiempo de respuesta, horas de recurso, estado y prioridad |
-| [DPCI_Solicitudes_2024_reducido.csv](recursos/DPCI_Solicitudes_2024_reducido.csv) | Versión de 1,000 filas para cuando se alcancen los límites de la versión gratuita |
-
-> Descargar los archivos con el botón **Download raw file** y guardarlos en `Documentos\Practicas_IA_DPCI\Practica09`.
-
-## Instrucciones Paso a Paso
-
-### Paso 1: Cargar la base y validar su estructura (5 min)
-
-**Objetivo:** Confirmar que ChatGPT leyó la base completa.
-
-1. Abrir [chatgpt.com](https://chatgpt.com/), iniciar sesión y crear un **Nuevo chat**.
-2. Adjuntar `DPCI_Solicitudes_2024.csv` con el botón **+** (Agregar archivos) y enviar:
-
-```text
-Analiza el archivo CSV adjunto. Indica el número de filas y columnas, el tipo de dato de cada columna,
-el rango de fechas y una muestra de 5 filas. No hagas conclusiones todavía.
-```
-
-3. Observar que ChatGPT ejecuta un análisis (puede mostrar "Analizando" o un enlace para ver el análisis).
-
-**Resultado esperado:** 5,203 filas, 8 columnas y fechas de enero a diciembre de 2024.
-
-**Verificación:** Si reporta otro número de filas, pedir que lo vuelva a contar. Si la herramienta indica un límite, usar el archivo reducido.
-
-### Paso 2: Limpiar los datos (6 min)
-
-**Objetivo:** Detectar y tratar los problemas de calidad de la base.
-
-1. Enviar:
-
-```text
-Revisa la calidad de los datos: identifica IDs duplicados y valores vacíos por columna.
-Elimina los duplicados exactos y deja los vacíos de Horas_Recurso fuera de los cálculos de esa columna.
-Explica qué hiciste y cuántas filas quedan.
-```
-
-**Resultado esperado:** ChatGPT encuentra **3 IDs duplicados** y **81 valores vacíos** en `Horas_Recurso`, y quedan **5,200 filas** después de la limpieza.
-
-**Verificación:** El conteo final es de 5,200 filas.
-
-### Paso 3: Estadísticas descriptivas y gráficas (8 min)
-
-**Objetivo:** Describir el comportamiento de la base con tablas y gráficas.
-
-1. Enviar:
-
-```text
-Con los datos limpios, calcula por nodo y por tipo de solicitud: número de solicitudes y promedio, mediana y máximo
-del tiempo de respuesta. Genera dos gráficas: 1) promedio de tiempo de respuesta por nodo y
-2) número de solicitudes por mes.
-```
-
-2. Descargar las dos gráficas (botón de descarga sobre cada imagen) y guardarlas en la carpeta de la práctica.
-
-**Resultado esperado:** El **Nodo Norte** tiene un promedio de tiempo de respuesta de aproximadamente **71.5 minutos**, el doble que los demás nodos (alrededor de **35 minutos**).
-
-**Verificación:** Las gráficas se descargaron y muestran los cuatro nodos y los 12 meses.
-
-### Paso 4: Identificar anomalías y verificarlas (5 min)
-
-**Objetivo:** Encontrar la causa del comportamiento atípico.
-
-1. Enviar:
-
-```text
-Identifica qué combinación de nodo y tipo de solicitud explica el tiempo de respuesta alto del Nodo Norte.
-Detecta los valores atípicos extremos (más de 500 minutos) e indica cuántos son y en qué combinación aparecen.
-```
-
-2. Para verificar, abrir el CSV en Excel, aplicar un filtro (**Datos > Filtro**) con **Nodo_Infraestructura = Nodo_Norte** y **Tipo_Solicitud = Incidente_Critico**, y revisar en la barra de estado el **Recuento** de filas.
-
-**Resultado esperado:** La combinación **Nodo_Norte + Incidente_Critico** (248 solicitudes) tiene un promedio de aproximadamente **212 minutos**, frente a unos **35 minutos** del resto, y concentra **12 valores atípicos** de más de 500 minutos.
-
-**Verificación:** El recuento de Excel coincide con el de ChatGPT, con una diferencia máxima de 1 o 2 filas por los duplicados.
-
-### Paso 5: Redactar el documento en Canvas (7 min)
-
-**Objetivo:** Crear el borrador del documento oficial de conclusiones.
-
-1. Enviar:
-
-```text
-Abre Canvas y redacta el documento oficial "Conclusiones técnicas del análisis de solicitudes DPCI 2024" con:
-1. Resumen ejecutivo. 2. Metodología (fuente, limpieza y análisis realizados). 3. Hallazgos cuantitativos con tablas.
-4. Anomalías detectadas. 5. Recomendaciones a corto y mediano plazo.
-Usa solo los resultados de este análisis.
-```
-
-2. Si Canvas no se abre automáticamente, seleccionar la opción **Canvas** en el menú de herramientas del cuadro de mensaje y repetir la instrucción.
-
-**Resultado esperado:** Un documento en el panel de Canvas con las 5 secciones.
-
-**Verificación:** Las cifras del documento coinciden con las de los pasos 2 a 4.
-
-### Paso 6: Refinar de forma iterativa y exportar (5 min)
-
-**Objetivo:** Mejorar el documento con varias iteraciones dirigidas.
-
-1. En Canvas, seleccionar el párrafo del **Resumen ejecutivo** y pedir en el cuadro que aparece: *"Hazlo más breve y con tono formal institucional."*
-2. Pedir en el chat: *"Agrega a la sección de anomalías una tabla con nodo, tipo, número de casos y promedio de tiempo."*
-3. Usar las herramientas de Canvas (por ejemplo, **Ajustar la longitud** o **Nivel de lectura**) para revisar el documento.
-4. Copiar el documento final a Word y guardarlo como `Conclusiones_Tecnicas_DPCI_2024_[INICIALES].docx`. Agregar al final: *"Documento elaborado con apoyo de IA y revisado por [nombre del participante]."*
-
-**Resultado esperado:** Un documento oficial refinado en al menos dos iteraciones.
-
-**Verificación:** El documento final conserva las cifras verificadas.
-
-## Validación y Pruebas
-
-| Caso | Acción o prompt | Resultado esperado |
-| :--- | :--- | :--- |
-| Limpieza | Revisar el Paso 2 | 3 duplicados, 81 vacíos, 5,200 filas finales |
-| Anomalía | Revisar el Paso 4 | Nodo_Norte + Incidente_Critico con promedio cercano a 212 minutos |
-| Prueba adversarial | Pedir en Canvas: *"Agrega que el Nodo Sur tuvo 500 incidentes críticos"* | ChatGPT advierte que los datos no respaldan esa afirmación |
-
-Si usó la base reducida: 1,000 filas, 13 vacíos y 41 casos de Nodo_Norte + Incidente_Critico con un promedio cercano a 241 minutos.
-
-## Solución de Problemas
-
-### Problema 1: ChatGPT no puede analizar el archivo
-
-- **Síntomas:** Error al cargar o mensaje de límite de uso.
-- **Causa:** Límites de la versión gratuita para archivos o para el análisis de datos.
-- **Solución:** Esperar a que se restablezca el límite o usar `DPCI_Solicitudes_2024_reducido.csv`.
-
-### Problema 2: Canvas no aparece
-
-- **Síntomas:** La respuesta llega en el chat y no en el panel de Canvas.
-- **Causa:** La instrucción no activó Canvas.
-- **Solución:** Seleccionar **Canvas** en las herramientas del cuadro de mensaje o escribir *"Abre esto en Canvas"*.
-
-## Limpieza
-
-1. Conservar el documento final y las gráficas en `Documentos\Practicas_IA_DPCI\Practica09`.
-2. Eliminar la conversación si la política institucional lo indica.
-
-## Resumen
-
-- ChatGPT analizó una base masiva sin que el participante escribiera código.
-- Se limpiaron los datos y se identificó la anomalía principal (Nodo Norte en incidentes críticos), verificada en Excel.
-- Canvas permitió redactar y refinar de forma iterativa el documento oficial de conclusiones.
+> **Nota técnica para el aula (Versión Gratuita de ChatGPT):** La versión gratuita incluye cuotas periódicas de uso para análisis de archivos con Python y apertura de Canvas. Para optimizar el consumo de mensajes en los 30 minutos de clase, cada prompt está diseñado para ejecutar múltiples tareas consolidadas por turno.
 
 ---
 
-[⬅ Anterior: Práctica 8](../Practica08/README.md) | [Inicio](../../README.md) | [Siguiente: Práctica 10 ➡](../Practica10/README.md)
+## Sección 1: Demostración del Instructor (3 Pasos)
+
+1. **Autogeneración y descarga de base de datos masiva en ChatGPT (Advanced Data Analysis):**
+   * El instructor abre **ChatGPT** y envía el siguiente prompt para que el entorno de Python genere internamente un archivo CSV estructurado y lo entregue listo para descargar:
+     ```text
+     Actúa como un Científico de Datos de la DPCI.
+     
+     Utilizando tu entorno de análisis de datos (Python), genera una base de datos ficticia de 30 registros de ejecución contractual con las columnas: ID_Contrato, Mes, Area_Tecnica, Valor_USD, Dias_Retraso y Estado. 
+     Introduce intencionalmente 2 registros con valores atípicamente altos en Dias_Retraso (> 60 días) y entrega un enlace para descargar el archivo como 'Datos_Demo_DPCI.csv'.
+     ```
+   * El instructor descarga el archivo `Datos_Demo_DPCI.csv`.
+
+2. **Carga del archivo, análisis estadístico y visualización en Advanced Data Analysis:**
+   * En un nuevo chat de **ChatGPT**, el instructor adjunta el archivo `Datos_Demo_DPCI.csv` (botón **+** > *Cargar desde la computadora*) y ejecuta el análisis:
+     ```text
+     Analiza el archivo adjunto usando Python. Calcula el valor total y promedio en USD, identifica estadísticamente los 2 registros atípicos (anomalías) en Dias_Retraso y genera un gráfico de barras descargable del Valor_USD acumulado por Area_Tecnica.
+     ```
+
+3. **Apertura de interfaz Canvas y edición iterativa del informe:**
+   * En la misma sesión, el instructor solicita abrir el editor colaborativo **Canvas** (o hace clic en el icono **Canvas** en la barra de herramientas del cuadro de texto):
+     ```text
+     Abre Canvas y redacta un borrador corto de "Conclusiones Técnicas de Auditoría DPCI" (3 párrafos) integrando las cifras y anomalías encontradas en el archivo anterior.
+     ```
+   * Con la pantalla dividida de **Canvas** abierta a la derecha, el instructor selecciona el segundo párrafo con el ratón y usa el menú flotante de edición puntual para pedirle: *"Haz este párrafo más técnico y resalta los IDs de las anomalías en negrita"*.
+
+---
+
+## Sección 2: Práctica Guiada del Participante (30 min)
+
+1. **Autogeneración de una base de datos masiva institucional en ChatGPT:**
+   * Abre **ChatGPT** (con tu cuenta gratuita) y envía el siguiente prompt para crear un archivo de datos extenso de 50 registros operativos y financieros de la DPCI:
+     ```text
+     Actúa como un Ingeniero de Datos de la DPCI.
+     
+     Usa tu entorno de ejecución de código (Python) para crear una base de datos institucional ficticia de 50 registros (numerados del REG-001 al REG-050) sobre gestión de proyectos, compras e infraestructura con estas columnas exactas:
+     - ID_Registro
+     - Trimestre (Q1, Q2, Q3 o Q4)
+     - Direccion_Area (Infraestructura, Planeacion, Contratacion o Sistemas)
+     - Presupuesto_Asignado_USD (valores aleatorios entre $15.000 y $250.000 USD)
+     - Costo_Real_USD (valores cercanos al presupuesto, pero introduce exactamente 3 anomalías graves donde el Costo_Real_USD supere en más de un 45% al Presupuesto_Asignado_USD)
+     - Tiempo_Entrega_Dias (valores entre 10 y 45 días, incluyendo 2 anomalías extremas mayores a 90 días)
+     
+     Exporta y entrega el enlace de descarga del archivo en formato CSV llamado 'Base_Masiva_DPCI_2026.csv'.
+     ```
+   * Haz clic en el enlace generado y descarga `Base_Masiva_DPCI_2026.csv` en tu computadora.
+
+2. **Carga del archivo en Advanced Data Analysis para detección de tendencias y anomalías:**
+   * Abre un **Nuevo Chat** en **ChatGPT**, haz clic en el botón **+** (adjuntar archivo) y sube el archivo `Base_Masiva_DPCI_2026.csv` que acabas de descargar.
+   * Envía el siguiente prompt para ejecutar la auditoría estadística completa mediante Python:
+     ```text
+     Actúa como un Analista Senior de Ciencia de Datos de la DPCI.
+     
+     Analiza el archivo adjunto 'Base_Masiva_DPCI_2026.csv' utilizando Python y entrega:
+     1. Resumen Estadístico Global: Total de registros, suma de Presupuesto_Asignado_USD, suma de Costo_Real_USD, desviación presupuestal neta (en USD y porcentaje) y promedio de Tiempo_Entrega_Dias.
+     2. Detección de Anomalías Financieras: Identifica en una tabla los registros exactos donde el Costo_Real_USD excede en más del 45% al Presupuesto_Asignado_USD (muestra ID, Área, Presupuesto, Costo Real y % de Sobrecosto).
+     3. Detección de Anomalías Operativas: Identifica los registros cuyo Tiempo_Entrega_Dias supera los 90 días.
+     4. Tendencia Trimestral: Genera una imagen gráfica PNG descargable de líneas o barras que muestre la evolución del Presupuesto Asignado vs. Costo Real por Trimestre (Q1 a Q4).
+     ```
+   * Revisa las tablas estadísticas y descarga la gráfica generada por ChatGPT.
+
+3. **Apertura de la interfaz Canvas para redactar el Documento Oficial de Conclusiones Técnicas:**
+   * Manteniéndote en la misma conversación de **ChatGPT** (donde están los resultados del análisis de Python), activa la herramienta **Canvas** (desde el menú de herramientas **+** > *Canvas* o solicitándolo explícitamente en el prompt) y envía:
+     ```text
+     Abre la interfaz Canvas y redacta el documento formal titulado "Informe Oficial de Conclusiones Técnicas y Auditoría de Datos - DPCI 2026".
+     
+     Estructura el documento dentro de Canvas con estas 4 secciones obligatorias:
+     1. Resumen Ejecutivo (integrando las cifras totales de presupuesto, costo real y desviación neta calculadas en el paso anterior).
+     2. Análisis de Tendencias por Trimestre y Dirección (explicando el comportamiento de ejecución a lo largo de Q1 a Q4).
+     3. Hallazgos de Anomalías Críticas (detallando con sus IDs exactos los casos de sobrecosto mayor al 45% y los retrasos mayores a 90 días).
+     4. Dictamen Técnico y Medidas Correctivas (3 acciones concretas de control presupuestal y operativo).
+     ```
+   * Verifica que el documento se abra en el panel lateral derecho de **Canvas**.
+
+4. **Edición colaborativa e iterativa por secciones dentro de Canvas:**
+   * Trabaja directamente sobre el panel derecho de **Canvas** realizando las siguientes 3 iteraciones de mejora puntual:
+     * **Iteración 1 (Edición puntual con el ratón):** Selecciona con el cursor únicamente la **Sección 3 (Hallazgos de Anomalías Críticas)** dentro de Canvas, haz clic en el botón flotante **Preguntar a ChatGPT** y escribe: *"Convierte los hallazgos de esta sección en una tabla técnica estructurada con columnas para ID, Tipo de Anomalía, Magnitud del Impacto y Nivel de Riesgo"*.
+     * **Iteración 2 (Ajuste de longitud y tono):** En el menú de accesos rápidos de la esquina inferior derecha de Canvas (icono de lápiz/ajustes), selecciona la opción **Ajustar longitud** o escribe en el chat principal: *"En el documento de Canvas, expande la Sección 4 agregando un responsable institucional y un plazo en días para cada una de las 3 medidas correctivas"*.
+     * **Iteración 3 (Revisión final de calidad):** Pide en el chat: *"Revisa todo el documento en Canvas para asegurar un tono institucional formal de la DPCI, verifica que todas las cifras coincidan exactamente con el CSV analizado y agrega al final un bloque de firmas para el Líder de Ciencia de Datos y el Director de la DPCI"*.
+
+5. **Exportación y cierre del entregable oficial:**
+   * En la esquina superior derecha de la ventana de **Canvas**, utiliza el botón **Copiar** (o **Exportar** según disponibilidad de tu cuenta) para extraer el documento definitivo ya depurado y pégalo en un documento en blanco para su entrega oficial.
+
+## Resultado esperado
+Una base de datos masiva autogenerada (`Base_Masiva_DPCI_2026.csv`), su auditoría estadística completa y gráfica de tendencias generadas mediante **Advanced Data Analysis** (Python), y el **Informe Oficial de Conclusiones Técnicas de la DPCI** redactado y refinado de manera iterativa en la interfaz colaborativa **Canvas** de **ChatGPT**.

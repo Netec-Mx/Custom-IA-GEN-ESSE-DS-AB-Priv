@@ -92,7 +92,7 @@ Los participantes utilizarán exclusivamente la versión gratuita de **Anthropic
    * Verifica que Claude haya detectado las 5 brechas principales (incremento injustificado de $25.000 USD, ausencia de ISO 27001, cobertura en solo 4 de 6 sedes, retraso respecto al 10 de julio e intento de pago del 100% sin cumplimiento).
 
 4. **Redacción del Informe Técnico Consolidado con Evidencia y Conclusiones en Claude:**
-   * En la misma conversación, solicita a **Claude** consolidar todo el análisis en un entregable técnico definitivo de alto nivel (se abrirá automáticamente como documento estructurado en el panel lateral derecho / *Artifact*):
+   * En la misma conversación, solicita a **Claude** consolidar todo el análisis en un entregable técnico definitivo de alto nivel:
      ```text
      Actúa como el Director Técnico de Auditoría y Evaluación de Proyectos de la DPCI.
      
@@ -107,7 +107,7 @@ Los participantes utilizarán exclusivamente la versión gratuita de **Anthropic
      ```
 
 5. **Refinamiento final, validación de citas y exportación del informe desde Claude:**
-   * Revisa el documento generado en el panel derecho de **Claude** y envía un último prompt corto de verificación de calidad antes de descargarlo:
+   * Revisa el documento generado y envía un último prompt corto de verificación de calidad antes de descargarlo:
      ```text
      Revisa el Informe Técnico Consolidado que acabas de generar y verifica que:
      1. Todas las cifras en USD ($320.000 y $345.000) y fechas (10 feb, 25 feb, 05 mar, 10 jul, 20 jul, 25 jul) sean 100% coherentes en todo el texto.

@@ -30,8 +30,8 @@ Los participantes utilizarán exclusivamente la versión gratuita de **Anthropic
      Analiza conjuntamente los 3 documentos del CASO-DPCI-901 que acabas de generar y construye una tabla Markdown con las columnas: Aspecto_Evaluado, Evidencia_DOC_A, Evidencia_DOC_B, Evidencia_DOC_C y Dictamen (CONSISTENTE / INCONSISTENCIA_TECNICA / INCONSISTENCIA_CANTIDAD / RETRASO_TEMPORAL).
      ```
 
-3. **Generación de informe técnico consolidado en panel lateral (Artifact) de Claude:**
-   * El instructor solicita consolidar el dictamen en un documento formal limpio dentro del panel lateral derecho de Claude:
+3. **Generación de informe técnico:**
+   * El instructor solicita consolidar el dictamen en un documento formal limpio:
      ```text
      Con base en la auditoría anterior, redacta un "Dictamen Técnico de No Conformidad Contractual" de 3 secciones (Hechos Relevantes, Matriz de Inconsistencias con Evidencia y Conclusiones Jurídico-Técnicas) preséntalo como un documento limpio y estructurado listo para copiar o descargar.
      ```

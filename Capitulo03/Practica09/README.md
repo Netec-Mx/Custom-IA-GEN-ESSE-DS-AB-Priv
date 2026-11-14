@@ -3,9 +3,9 @@
 **Duración de la práctica:** 30 min
 
 ## Descripción
-Los participantes utilizarán exclusivamente la versión gratuita de **OpenAI ChatGPT** aprovechando sus dos entornos especializados: **Advanced Data Analysis** (entorno de ejecución de código Python para procesar datos y generar gráficas) y la interfaz **Canvas** (editor colaborativo en pantalla dividida). A partir de una base de datos masiva de la DPCI autogenerada directamente en formato CSV/Excel descargable, los asistentes realizarán un análisis estadístico para identificar tendencias y anomalías, y luego activarán **Canvas** para redactar, editar por secciones y pulir de forma iterativa el documento oficial de conclusiones técnicas.
+Los participantes utilizarán exclusivamente la versión gratuita de **OpenAI ChatGPT** aprovechando su entorno de ejecución de código **Advanced Data Analysis** (Python) para procesar datos, identificar tendencias y anomalías, y generar un informe técnico estructurado de la DPCI. 
 
-> **Nota técnica para el aula (Versión Gratuita de ChatGPT):** La versión gratuita incluye cuotas periódicas de uso para análisis de archivos con Python y apertura de Canvas. Para optimizar el consumo de mensajes en los 30 minutos de clase, cada prompt está diseñado para ejecutar múltiples tareas consolidadas por turno.
+> **Nota importante sobre herramientas:** La interfaz **Canvas** de OpenAI ya no se encuentra vigente ni disponible en la plataforma. Por esta razón, realizaremos la redacción iterativa, estructuración y refinamiento del documento oficial de conclusiones técnicas directamente mediante **prompts de formato y control de secciones** en el chat principal de ChatGPT.
 
 ---
 
@@ -22,17 +22,16 @@ Los participantes utilizarán exclusivamente la versión gratuita de **OpenAI Ch
    * El instructor descarga el archivo `Datos_Demo_DPCI.csv`.
 
 2. **Carga del archivo, análisis estadístico y visualización en Advanced Data Analysis:**
-   * En un nuevo chat de **ChatGPT**, el instructor adjunta el archivo `Datos_Demo_DPCI.csv` (botón **+** > *Cargar desde la computadora*) y ejecuta el análisis:
+   * En un nuevo chat de **ChatGPT**, el instructor adjunta el archivo `Datos_Demo_DPCI.csv` y ejecuta el análisis:
      ```text
      Analiza el archivo adjunto usando Python. Calcula el valor total y promedio en USD, identifica estadísticamente los 2 registros atípicos (anomalías) en Dias_Retraso y genera un gráfico de barras descargable del Valor_USD acumulado por Area_Tecnica.
      ```
 
-3. **Apertura de interfaz Canvas y edición iterativa del informe:**
-   * En la misma sesión, el instructor solicita abrir el editor colaborativo **Canvas** (o hace clic en el icono **Canvas** en la barra de herramientas del cuadro de texto):
+3. **Redacción estructurada del informe técnico mediante prompts de control en el chat:**
+   * Como la interfaz Canvas ya no está disponible, el instructor guía la redacción paso a paso en la misma sesión:
      ```text
-     Abre Canvas y redacta un borrador corto de "Conclusiones Técnicas de Auditoría DPCI" (3 párrafos) integrando las cifras y anomalías encontradas en el archivo anterior.
+     Redacta el borrador formal de "Conclusiones Técnicas de Auditoría DPCI" estructurado en 3 secciones (Resumen Ejecutivo, Análisis de Hallazgos y Medidas Correctivas), integrando las cifras y anomalías encontradas.
      ```
-   * Con la pantalla dividida de **Canvas** abierta a la derecha, el instructor selecciona el segundo párrafo con el ratón y usa el menú flotante de edición puntual para pedirle: *"Haz este párrafo más técnico y resalta los IDs de las anomalías en negrita"*.
 
 ---
 
@@ -69,27 +68,28 @@ Los participantes utilizarán exclusivamente la versión gratuita de **OpenAI Ch
      ```
    * Revisa las tablas estadísticas y descarga la gráfica generada por ChatGPT.
 
-3. **Apertura de la interfaz Canvas para redactar el Documento Oficial de Conclusiones Técnicas:**
-   * Manteniéndote en la misma conversación de **ChatGPT** (donde están los resultados del análisis de Python), activa la herramienta **Canvas** (desde el menú de herramientas **+** > *Canvas* o solicitándolo explícitamente en el prompt) y envía:
+3. **Redacción del Documento Oficial de Conclusiones Técnicas mediante Prompts Estructurados:**
+   * Manteniéndote en la misma conversación de **ChatGPT** (aprovechando los resultados del análisis de Python), envía el siguiente prompt para iniciar la redacción formal del informe:
      ```text
-     Abre la interfaz Canvas y redacta el documento formal titulado "Informe Oficial de Conclusiones Técnicas y Auditoría de Datos - DPCI 2026".
+     Actúa como un Redactor Técnico Senior de la DPCI.
      
-     Estructura el documento dentro de Canvas con estas 4 secciones obligatorias:
+     Redacta el documento formal titulado "Informe Oficial de Conclusiones Técnicas y Auditoría de Datos - DPCI 2026".
+     
+     Estructura el documento con estas 4 secciones obligatorias:
      1. Resumen Ejecutivo (integrando las cifras totales de presupuesto, costo real y desviación neta calculadas en el paso anterior).
      2. Análisis de Tendencias por Trimestre y Dirección (explicando el comportamiento de ejecución a lo largo de Q1 a Q4).
-     3. Hallazgos de Anomalías Críticas (detallando con sus IDs exactos los casos de sobrecosto mayor al 45% y los retrasos mayores a 90 días).
+     3. Hallazgos de Anomalías Críticas (detallando con sus IDs exactos los casos de sobrecosto mayor al 45% y los retrasos mayores al límite operativo).
      4. Dictamen Técnico y Medidas Correctivas (3 acciones concretas de control presupuestal y operativo).
      ```
-   * Verifica que el documento se abra en el panel lateral derecho de **Canvas**.
 
-4. **Edición colaborativa e iterativa por secciones dentro de Canvas:**
-   * Trabaja directamente sobre el panel derecho de **Canvas** realizando las siguientes 3 iteraciones de mejora puntual:
-     * **Iteración 1 (Edición puntual con el ratón):** Selecciona con el cursor únicamente la **Sección 3 (Hallazgos de Anomalías Críticas)** dentro de Canvas, haz clic en el botón flotante **Preguntar a ChatGPT** y escribe: *"Convierte los hallazgos de esta sección en una tabla técnica estructurada con columnas para ID, Tipo de Anomalía, Magnitud del Impacto y Nivel de Riesgo"*.
-     * **Iteración 2 (Ajuste de longitud y tono):** En el menú de accesos rápidos de la esquina inferior derecha de Canvas (icono de lápiz/ajustes), selecciona la opción **Ajustar longitud** o escribe en el chat principal: *"En el documento de Canvas, expande la Sección 4 agregando un responsable institucional y un plazo en días para cada una de las 3 medidas correctivas"*.
-     * **Iteración 3 (Revisión final de calidad):** Pide en el chat: *"Revisa todo el documento en Canvas para asegurar un tono institucional formal de la DPCI, verifica que todas las cifras coincidan exactamente con el CSV analizado y agrega al final un bloque de firmas para el Líder de Ciencia de Datos y el Director de la DPCI"*.
+4. **Edición colaborativa e iterativa por secciones en el chat:**
+   * Refina el contenido del informe enviando instrucciones específicas de mejora iterativa:
+     * **Iteración 1 (Estructuración tabular):** Envía: *"Modifica únicamente la Sección 3 para convertir los hallazgos de anomalías críticas en una tabla técnica estructurada con columnas para ID, Tipo de Anomalía, Magnitud del Impacto y Nivel de Riesgo"*.
+     * **Iteración 2 (Ajuste de profundidad):** Envía: *"Expande la Sección 4 agregando un responsable institucional específico y un plazo en días para cada una de las 3 medidas correctivas"*.
+     * **Iteración 3 (Revisión de tono):** Envía: *"Revisa todo el texto para asegurar un tono institucional formal de la DPCI, verifica que todas las cifras coincidan exactamente con el CSV analizado y agrega al final un bloque de firmas para el Líder de Ciencia de Datos y el Director de la DPCI"*.
 
-5. **Exportación y cierre del entregable oficial:**
-   * En la esquina superior derecha de la ventana de **Canvas**, utiliza el botón **Copiar** (o **Exportar** según disponibilidad de tu cuenta) para extraer el documento definitivo ya depurado y pégalo en un documento en blanco para su entrega oficial.
+5. **Copia y cierre del entregable oficial:**
+   * Utiliza el botón de **Copiar** en el bloque de respuesta final de ChatGPT para extraer el documento definitivo ya depurado y guárdalo en un archivo de texto o documento para su entrega oficial.
 
 ## Resultado esperado
-Una base de datos masiva autogenerada (`Base_Masiva_DPCI_2026.csv`), su auditoría estadística completa y gráfica de tendencias generadas mediante **Advanced Data Analysis** (Python), y el **Informe Oficial de Conclusiones Técnicas de la DPCI** redactado y refinado de manera iterativa en la interfaz colaborativa **Canvas** de **ChatGPT**.
+Una base de datos masiva autogenerada (`Base_Masiva_DPCI_2026.csv`), su auditoría estadística completa y gráfica de tendencias generadas mediante **Advanced Data Analysis** (Python), y el **Informe Oficial de Conclusiones Técnicas de la DPCI** redactado, estructurado y refinado de forma iterativa mediante prompts de control en el chat de **ChatGPT**.

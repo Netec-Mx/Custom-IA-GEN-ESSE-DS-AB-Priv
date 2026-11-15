@@ -131,7 +131,6 @@ No hay recursos compartidos entre participantes. Cada participante trabaja con s
 |---|---|---|
 | El repositorio tenía 8 carpetas numeradas por módulo; el temario define 3 capítulos | `Capitulo01` a `Capitulo03`, con una carpeta y un README por práctica | Ninguno |
 | Las prácticas requerían terminal Linux, bash y Python, contrario al perfil "sin experiencia en programación" | Pasos con Word, Excel, Bloc de notas y herramientas web | Ninguno |
-| Los archivos de entrada se generaban con scripts | 30 archivos listos para descargar en `recursos` | Ninguno |
 | Los enlaces apuntaban a otro repositorio (`261108-Custom-IA-GEN-ESSE-DS-AB-Priv`) | Enlaces relativos dentro del repositorio | Ninguno |
 | Los KPIs esperados de la práctica de clasificación no coincidían con su propia tabla | Valores de referencia recalculados y rangos esperados | Ninguno |
 | La práctica comparativa rellenaba la matriz con resultados predefinidos | El participante registra su propia evidencia | Ninguno |
@@ -166,7 +165,6 @@ No aplica. El curso no requiere máquinas virtuales, contenedores ni emuladores.
 | ID | Componente o capacidad | Procedimiento | Resultado esperado | Evidencia mínima |
 |---|---|---|---|---|
 | V-01 | Navegador | Abrir [github.com](https://github.com/) y el repositorio | El repositorio se muestra | Captura |
-| V-02 | Archivos | Abrir `Lote_Expedientes_Sensibles_DPCI.xlsx` en Excel | El archivo muestra 20 registros | Captura |
 | V-03 | ChatGPT | Adjuntar `DPCI_Solicitudes_2024_reducido.csv` y pedir el número de filas | 1,000 filas | Captura |
 | V-04 | Copilot | Adjuntar `DPCI_Metricas_Operativas_2024.xlsx` y pedir el número de registros | 48 registros | Captura |
 | V-05 | NotebookLM | Crear un cuaderno y subir un PDF de la Práctica 8 | La fuente aparece en el panel | Captura |
@@ -198,7 +196,7 @@ No aplica. El curso se valida únicamente en interfaces web con los procedimient
 
 # Resumen
 
-Para iniciar el curso, cada participante necesita un navegador actualizado, Excel, Word y PowerPoint (o LibreOffice) y cuentas gratuitas en las cuatro plataformas de IA. No se requiere programación ni instalación de lenguajes o herramientas de línea de comandos.
+Para iniciar el curso, cada participante necesita un navegador actualizado, Excel, Word y PowerPoint y cuentas gratuitas en las cuatro plataformas de IA. No se requiere programación ni instalación de lenguajes o herramientas de línea de comandos.
 
 <a id="registro-validacion"></a>
 

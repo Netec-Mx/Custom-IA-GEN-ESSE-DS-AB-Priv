@@ -12,14 +12,14 @@
 | Fecha de última validación | 2026-11-09 (revisión del repositorio) |
 | Repositorio de laboratorios | [github.com/Netec-Mx/Custom-IA-GEN-ESSE-DS-AB-Priv](https://github.com/Netec-Mx/Custom-IA-GEN-ESSE-DS-AB-Priv) |
 | Rama y revisión analizada | `changes_course`, versión 1.0 |
-| Alcance revisado | 3 capítulos, 10 módulos, 10 prácticas, 30 archivos de recursos, README principal y Setup Guide |
+| Alcance revisado | 3 capítulos, 10 módulos, 10 prácticas, README principal y Setup Guide |
 | Modalidad del entorno | Web (servicios SaaS gratuitos) con aplicaciones de ofimática locales o en la web |
 
 [Inicio](README.md)
 
 # Objetivo
 
-Preparar, para cada participante, un equipo con navegador actualizado, una suite de ofimática (Microsoft 365 o LibreOffice) y cuentas gratuitas activas en ChatGPT, Microsoft Copilot, Google (Gemini y NotebookLM) y Claude, además de los archivos ficticios de las 10 prácticas descargados en una carpeta local. El entorno se considera listo cuando las validaciones obligatorias de la sección [Validación del Entorno](#validacion-entorno) se aprueban con la cuenta de un participante. No se requiere instalar lenguajes de programación ni usar la terminal.
+Preparar, para cada participante, un equipo con navegador actualizado, una suite de ofimática (Microsoft 365 o LibreOffice) y cuentas gratuitas activas en ChatGPT, Microsoft Copilot, Google (Gemini y NotebookLM) y Claude. El entorno se considera listo cuando las validaciones obligatorias de la sección [Validación del Entorno](#validacion-entorno) se aprueban con la cuenta de un participante. No se requiere instalar lenguajes de programación ni usar la terminal.
 
 # Requisitos de Hardware
 
@@ -46,7 +46,6 @@ Las instrucciones de las prácticas usan Windows 11 y los nombres de menú de Mi
 |---|---|---|---|---|
 | Navegador Microsoft Edge o Google Chrome | Versión estable vigente | x64 | Obligatorio | [google.com/chrome](https://www.google.com/chrome/) |
 | Microsoft Excel, Word y PowerPoint | Microsoft 365 (escritorio o web) | x64 | Obligatorio (o LibreOffice como alternativa) | [microsoft365.com](https://www.microsoft365.com/) |
-| LibreOffice | Versión estable vigente | x64 | Opcional, si no hay Microsoft 365 | [libreoffice.org](https://www.libreoffice.org/download/download-libreoffice/) |
 | ChatGPT | Servicio administrado, plan gratuito | N/A | Obligatorio (Práctica 9) | [chatgpt.com](https://chatgpt.com/) |
 | Microsoft Copilot Chat | Servicio administrado, versión gratuita | N/A | Obligatorio (Práctica 7) | [copilot.microsoft.com](https://copilot.microsoft.com/) |
 | Google Gemini | Servicio administrado, plan gratuito | N/A | Opcional (prácticas 1 a 6, a elección del instructor) | [gemini.google.com](https://gemini.google.com/) |
@@ -63,7 +62,6 @@ Los servicios de IA son administrados y cambian sus modelos y límites sin previ
 |---|---|---|---|
 | Carga de archivos en ChatGPT | Disponible en el plan gratuito con límites diarios | Prácticas 1 a 6 y 9 | Incluida; requiere sesión iniciada |
 | Análisis de datos (Advanced Data Analysis) | Disponible en el plan gratuito con límites | Práctica 9 | Incluido; se activa al adjuntar un CSV ([documentación](https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt)) |
-| Canvas de ChatGPT | Disponible en el plan gratuito | Práctica 9 | Herramienta del cuadro de mensaje |
 | Proyectos de Claude | Según el plan y la versión disponible | Práctica 10 | Panel izquierdo de Claude ([documentación](https://support.claude.com/en/articles/9517075-what-are-projects)); si no está disponible, se adjuntan los archivos en el chat |
 | Fuentes de NotebookLM | Límite de fuentes por cuaderno del plan gratuito | Práctica 8 | Panel **Fuentes** ([documentación](https://support.google.com/gemininotebook/answer/16215270)) |
 | Archivos de las prácticas | Versión 1.0 del repositorio | Prácticas 1 a 10 | Carpetas `CapituloNN/PracticaNN/recursos/` |
@@ -87,15 +85,13 @@ Las cuentas son personales. No registrar contraseñas ni códigos de verificaci�
 
 - Repositorio autorizado: [github.com/Netec-Mx/Custom-IA-GEN-ESSE-DS-AB-Priv](https://github.com/Netec-Mx/Custom-IA-GEN-ESSE-DS-AB-Priv) (botón **Code > Download ZIP**) o paquete ZIP entregado por el instructor.
 - Revisión: rama `main` una vez integrados los cambios de `changes_course`.
-- Directorio de trabajo: `Documentos\Practicas_IA_DPCI\` con una subcarpeta por práctica (`Practica01` a `Practica10`).
-- Archivos de entrada: carpetas `recursos` de cada práctica.
 
 ## 2. Instalar o habilitar los componentes
 
 ### Navegador y ofimática
 
 1. Verificar que Edge o Chrome estén actualizados (**Configuración > Acerca de**).
-2. Verificar acceso a Excel, Word y PowerPoint (escritorio o [microsoft365.com](https://www.microsoft365.com/)), o instalar LibreOffice.
+2. Verificar acceso a Excel, Word y PowerPoint (escritorio o [microsoft365.com](https://www.microsoft365.com/)).
 
 **Resultado esperado:** El navegador indica que está actualizado y Excel abre un libro en blanco.
 
@@ -107,13 +103,6 @@ Las cuentas son personales. No registrar contraseñas ni códigos de verificaci�
 
 **Resultado esperado:** Cada servicio responde con la sesión iniciada.
 
-### Carpetas de trabajo
-
-1. Descomprimir el ZIP del repositorio.
-2. Crear `Documentos\Practicas_IA_DPCI\` y, dentro, las carpetas `Practica01` a `Practica10`.
-3. Copiar a cada carpeta el contenido de `CapituloNN\PracticaNN\recursos` correspondiente.
-
-**Resultado esperado:** 10 carpetas con 30 archivos en total.
 
 ## 3. Preparar archivos de configuración
 
@@ -129,17 +118,7 @@ No se requieren variables de entorno: el curso no usa programación ni línea de
 
 | Parámetro | Valor o convención | Observaciones |
 |---|---|---|
-| Raíz de trabajo | `Documentos\Practicas_IA_DPCI\` | Una carpeta por práctica |
-| Nombre de entregables | `Nombre_[INICIALES].ext` | Ejemplo: `Matriz_Verificacion_Cruzada_LMR.xlsx` |
 | Datos | Ficticios o anonimizados | Nunca cargar información real de la DPCI en las prácticas |
-| Separador de fórmulas | `;` (o `,` según configuración regional) | Prácticas 2 y 5 |
-
-## Estructura de carpetas
-
-```text
-Documentos\Practicas_IA_DPCI\
-├── Practica01\ ... Practica10\   Archivos de cada práctica y entregables
-```
 
 ## Recursos compartidos
 
@@ -151,7 +130,6 @@ No hay recursos compartidos entre participantes. Cada participante trabaja con s
 |---|---|---|
 | El repositorio tenía 8 carpetas numeradas por módulo; el temario define 3 capítulos | `Capitulo01` a `Capitulo03`, con una carpeta y un README por práctica | Ninguno |
 | Las prácticas requerían terminal Linux, bash y Python, contrario al perfil "sin experiencia en programación" | Pasos con Word, Excel, Bloc de notas y herramientas web | Ninguno |
-| Los archivos de entrada se generaban con scripts | 30 archivos listos para descargar en `recursos` | Ninguno |
 | Los enlaces apuntaban a otro repositorio (`261108-Custom-IA-GEN-ESSE-DS-AB-Priv`) | Enlaces relativos dentro del repositorio | Ninguno |
 | Los KPIs esperados de la práctica de clasificación no coincidían con su propia tabla | Valores de referencia recalculados y rangos esperados | Ninguno |
 | La práctica comparativa rellenaba la matriz con resultados predefinidos | El participante registra su propia evidencia | Ninguno |
@@ -186,7 +164,6 @@ No aplica. El curso no requiere máquinas virtuales, contenedores ni emuladores.
 | ID | Componente o capacidad | Procedimiento | Resultado esperado | Evidencia mínima |
 |---|---|---|---|---|
 | V-01 | Navegador | Abrir [github.com](https://github.com/) y el repositorio | El repositorio se muestra | Captura |
-| V-02 | Archivos | Abrir `Lote_Expedientes_Sensibles_DPCI.xlsx` en Excel | El archivo muestra 20 registros | Captura |
 | V-03 | ChatGPT | Adjuntar `DPCI_Solicitudes_2024_reducido.csv` y pedir el número de filas | 1,000 filas | Captura |
 | V-04 | Copilot | Adjuntar `DPCI_Metricas_Operativas_2024.xlsx` y pedir el número de registros | 48 registros | Captura |
 | V-05 | NotebookLM | Crear un cuaderno y subir un PDF de la Práctica 8 | La fuente aparece en el panel | Captura |
@@ -214,12 +191,11 @@ No aplica. El curso se valida únicamente en interfaces web con los procedimient
 - [ ] Navegador actualizado y suite de ofimática disponible.
 - [ ] Cuentas gratuitas activas en ChatGPT, Copilot, Google (Gemini y NotebookLM) y Claude.
 - [ ] Dominios de las herramientas permitidos en la red institucional.
-- [ ] 30 archivos de las prácticas descargados en `Documentos\Practicas_IA_DPCI\`.
 - [ ] Validaciones V-01 a V-06 aprobadas y registradas.
 
 # Resumen
 
-Para iniciar el curso, cada participante necesita un navegador actualizado, Excel, Word y PowerPoint (o LibreOffice), cuentas gratuitas en las cuatro plataformas de IA y los archivos ficticios de las prácticas descargados. No se requiere programación ni instalación de lenguajes o herramientas de línea de comandos.
+Para iniciar el curso, cada participante necesita un navegador actualizado, Excel, Word y PowerPoint y cuentas gratuitas en las cuatro plataformas de IA. No se requiere programación ni instalación de lenguajes o herramientas de línea de comandos.
 
 <a id="registro-validacion"></a>
 

@@ -19,7 +19,7 @@
 
 # Objetivo
 
-Preparar, para cada participante, un equipo con navegador actualizado, una suite de ofimática (Microsoft 365 o LibreOffice) y cuentas gratuitas activas en ChatGPT, Microsoft Copilot, Google (Gemini y NotebookLM) y Claude, además de los archivos ficticios de las 10 prácticas descargados en una carpeta local. El entorno se considera listo cuando las validaciones obligatorias de la sección [Validación del Entorno](#validacion-entorno) se aprueban con la cuenta de un participante. No se requiere instalar lenguajes de programación ni usar la terminal.
+Preparar, para cada participante, un equipo con navegador actualizado, una suite de ofimática (Microsoft 365 o LibreOffice) y cuentas gratuitas activas en ChatGPT, Microsoft Copilot, Google (Gemini y NotebookLM) y Claude. El entorno se considera listo cuando las validaciones obligatorias de la sección [Validación del Entorno](#validacion-entorno) se aprueban con la cuenta de un participante. No se requiere instalar lenguajes de programación ni usar la terminal.
 
 # Requisitos de Hardware
 

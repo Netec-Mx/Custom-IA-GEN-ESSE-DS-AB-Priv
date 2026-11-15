@@ -62,7 +62,6 @@ Los servicios de IA son administrados y cambian sus modelos y límites sin previ
 |---|---|---|---|
 | Carga de archivos en ChatGPT | Disponible en el plan gratuito con límites diarios | Prácticas 1 a 6 y 9 | Incluida; requiere sesión iniciada |
 | Análisis de datos (Advanced Data Analysis) | Disponible en el plan gratuito con límites | Práctica 9 | Incluido; se activa al adjuntar un CSV ([documentación](https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt)) |
-| Canvas de ChatGPT | Disponible en el plan gratuito | Práctica 9 | Herramienta del cuadro de mensaje |
 | Proyectos de Claude | Según el plan y la versión disponible | Práctica 10 | Panel izquierdo de Claude ([documentación](https://support.claude.com/en/articles/9517075-what-are-projects)); si no está disponible, se adjuntan los archivos en el chat |
 | Fuentes de NotebookLM | Límite de fuentes por cuaderno del plan gratuito | Práctica 8 | Panel **Fuentes** ([documentación](https://support.google.com/gemininotebook/answer/16215270)) |
 | Archivos de las prácticas | Versión 1.0 del repositorio | Prácticas 1 a 10 | Carpetas `CapituloNN/PracticaNN/recursos/` |

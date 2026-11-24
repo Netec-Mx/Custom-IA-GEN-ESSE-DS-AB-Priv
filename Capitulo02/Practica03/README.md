@@ -68,6 +68,7 @@ Los participantes aplicarán técnicas avanzadas de ingeniería de prompts (estr
      Rol: Eres un Asesor Ejecutivo de la Dirección General de la DPCI.
      Contexto: Tienes a la vista los 4 documentos del Expediente DPCI-404 generados anteriormente.
      Tarea: Elabora un resumen ejecutivo estructurado en dos niveles:
+     
      - Nivel 1 (Síntesis Ultra-Corta): Un único párrafo de máximo 50 palabras que resuma el objetivo del proyecto, el rango presupuestal y el principal conflicto entre áreas.
      - Nivel 2 (Desglose por Documento): Una lista con viñetas donde cada documento (DOC 1 a DOC 4) se resuma en exactamente dos líneas: primera línea para el aporte/solicitud, segunda línea para la restricción o condición impuesta.
      Restricción: No inventes cifras ni agregues información externa al texto.

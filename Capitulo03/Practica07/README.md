@@ -24,6 +24,7 @@ Los participantes utilizarán exclusivamente **Microsoft Copilot Chat** (sin dep
    * En la misma sesión de **Microsoft Copilot Chat**, el instructor solicita auditar los datos del archivo recién creado sin abrir Excel:
      ```text
      Analiza el archivo 'Seguimiento_Proyectos_DPCI.xlsx' que acabas de generar y responde en una tabla resumen:
+     
      1. Total de presupuesto asignado vs. ejecutado en USD.
      2. Porcentaje global de ejecución financiera.
      3. Identifica cuáles son los proyectos en estado "Retrasado" que presentan mayor desviación presupuestal.
@@ -33,6 +34,7 @@ Los participantes utilizarán exclusivamente **Microsoft Copilot Chat** (sin dep
    * El instructor solicita transformar el análisis anterior en los insumos documentales listos para llevar a Word y PowerPoint:
      ```text
      Con base en el análisis del archivo Excel, redacta:
+     
      1. Un bloque estructurado para Informe Ejecutivo en Word con: Objetivos, Alcance y Métricas Clave.
      2. Un esquema de 3 diapositivas para PowerPoint indicando título, 3 viñetas ejecutivas y sugerencia visual por diapositiva.
      ```

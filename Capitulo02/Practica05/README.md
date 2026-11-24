@@ -57,6 +57,7 @@ Los participantes utilizarán herramientas de Inteligencia Artificial Generativa
    * En la misma conversación de **ChatGPT**, pídele que procese el archivo que acaba de crear para agregar indicadores estratégicos y exportar una segunda versión actualizada:
      ```text
      Toma el archivo 'Base_Expedientes_DPCI.xlsx' que acabas de generar y créame una nueva versión descargable llamada 'Base_Expedientes_KPIs_DPCI.xlsx' que incluya:
+     
      1. En la hoja 'Metadatos_Extraidos': Una nueva columna calculada llamada 'Alerta_Anomalia' que marque "CRITICO" si Dias_Sin_Respuesta > 30 o si Monto_USD supera el promedio general, y "NORMAL" en los demás casos.
      2. Una segunda hoja llamada 'Resumen_KPIs' con una tabla consolidada que calcule: Total de Expedientes, Presupuesto Total USD, Promedio de Días sin Respuesta, Total de Casos Críticos y el desglose de presupuesto por Sede_Regional.
      ```
@@ -93,6 +94,7 @@ Los participantes utilizarán herramientas de Inteligencia Artificial Generativa
    * Regresa a **ChatGPT** (en la sesión donde está `Base_Expedientes_KPIs_DPCI.xlsx` o subiendo el archivo nuevamente) y solicita generar un gráfico ejecutivo listo para descargar e insertar en reportes:
      ```text
      Con base en los datos del archivo 'Base_Expedientes_KPIs_DPCI.xlsx', genera un gráfico ejecutivo combinado de alta resolución (en formato PNG descargable) que muestre:
+     
      - En un panel izquierdo: El Presupuesto Total en USD por Sede_Regional (gráfico de barras).
      - En un panel derecho: La distribución porcentual de expedientes según su estado en 'Alerta_Anomalia' (CRITICO vs NORMAL).
      

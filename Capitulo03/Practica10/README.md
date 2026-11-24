@@ -110,6 +110,7 @@ Los participantes utilizarán exclusivamente la versión gratuita de **Anthropic
    * Revisa el documento generado y envía un último prompt corto de verificación de calidad antes de descargarlo:
      ```text
      Revisa el Informe Técnico Consolidado que acabas de generar y verifica que:
+     
      1. Todas las cifras en USD ($320.000 y $345.000) y fechas (10 feb, 25 feb, 05 mar, 10 jul, 20 jul, 25 jul) sean 100% coherentes en todo el texto.
      2. Agrega al final un "Anexo de Trazabilidad" con una lista de verificación de 5 puntos firmada por el Equipo Auditor de la DPCI.
      ```

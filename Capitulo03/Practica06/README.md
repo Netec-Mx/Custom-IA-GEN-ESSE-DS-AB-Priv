@@ -96,6 +96,7 @@ Los participantes someterán simultáneamente las cuatro plataformas principales
    * En la misma sesión de **ChatGPT**, solicita transformar la tabla de resultados del Paso 4 en una recomendación institucional definitiva:
      ```text
      Con base en la Matriz Comparativa del paso anterior, redacta una "Guía Rápida de Selección de Plataformas IA para Profesionales de la DPCI" (máximo 250 palabras) que responda claramente:
+     
      1. ¿Qué herramienta elegir cuando se necesita generar gráficas y procesar archivos complejos?
      2. ¿Qué herramienta elegir para auditoría cruzada de documentos extensos y diagramas?
      3. ¿Qué protocolo obligatorio de verificación visual debe aplicar todo analista de la DPCI antes de confiar en la lectura de gráficos hecha por una IA?

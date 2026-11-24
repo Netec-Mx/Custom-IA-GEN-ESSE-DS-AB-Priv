@@ -97,6 +97,7 @@ Los participantes implementarán un protocolo riguroso de verificación cruzada 
    * En la misma conversación de **Google Gemini**, envía el siguiente prompt de profundización para auditar los cálculos derivados y los riesgos omitidos:
      ```text
      Con base en los datos del Expediente Original proporcionado anteriormente:
+     
      1. Calcula exactamente cuánto dinero en USD corresponde a cada uno de los tres rubros del presupuesto ($780.000 USD distribuidos en 60%, 25% y 15%) y verifica si el Memorando Ejecutivo mencionó o alteró alguno de estos valores.
      2. Identifica qué información crítica del Expediente Original (como los 3 riesgos técnicos o el responsable asignado) fue omitida en el Memorando Ejecutivo y explica por qué esa omisión representa un riesgo administrativo para la DPCI.
      ```
